@@ -265,7 +265,14 @@ p {
 }
 
 /* Media queries för responsivitet */
-@media (max-width: 600px) {
+
+@media (max-width: 1300px) {
+	html {
+		font-size: 1.1vw
+	}
+}
+
+@media (max-width: 1000px) {
   #contentLimiter {
     margin-right: 0%; 
     margin-left: 0%; 
