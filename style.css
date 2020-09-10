@@ -75,7 +75,7 @@ p {
 /* Main */ 
 #main {
   display: grid;
-  grid-template-columns: repeat(3, ;
+  grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(300px, auto);
   grid-auto-rows: auto;
   grid-template-areas: 
@@ -131,7 +131,8 @@ p {
 .six-boxes > div > h3 {
 	font-size: 3rem;
 	margin: 8% auto 0 8%;
-	color: #8c8d8c;
+	color: black;
+	opacity: 0.5;
 }
 
 .six-boxes > div > p {
