@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
 	<!-- Titel på hemsidan -->
-	<title>Landingninsidan</title>		
+	<title>Landningsidan</title>
 	<!-- Övrig nödvändig kod -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Oscar Lysgren Elias Lundgren">
 	<META NAME="Description" CONTENT="JavaScript">
 	<meta charset="UTF-8">
-		
+
 	<!-- Favicon -->
 	<link rel="icon" href="favicon.png" type="image/x-icon">
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+<<<<<<< HEAD
 <div id="wrapper">
 
     <section id="entry">
@@ -79,6 +82,98 @@ function scrollUp() {
     } else clearTimeout(scrollAnimation);
 }
   </script>
+=======
+	<div id="wrapper">
+
+		<section id="entry">
+			<div class="box1">
+				<h1>We've got you covered</h1><br>
+				<h5 class="standardText distanceRemover">
+					Together we keep each other safe
+					at home or at work. By paying a tiny fee a
+					day, you are fully insured all day long.
+					You get it all for as little as<div class="whiteText">$0.4 per day</div>
+				</h5>
+				<button class="standardText pillButton">JOIN NOW</button>
+			</div>
+			<div class="box2">
+				<h5 class="standardText">What do we have to offer?</h5>
+				<h2 class="whiteText distanceRemover">Learn more</h2>
+			</div>
+			<div class="box3">
+				<h5 class="standardText">What are you waiting for?</h5>
+				<h2 class="whiteText distanceRemover">Join today</h2>
+			</div>
+		</section>
+
+		<ul id="navbar" class="standardText">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Our offer</a></li>
+			<li><a href="#">Why us</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+
+		<main>
+
+		</main>
+
+		<section class="six-boxes" class="standardText">
+			<div id="zeroBox">
+				<h2>How it works?</h2>
+			</div>
+			<div id="firstBox">
+				<h3>01</h3>
+				<p class="center">Answer a few questions about yourself</p>
+				<div></div>
+			</div>
+			<div id="secondBox">
+				<h3>02</h3>
+				<p>Choose a plan. Get a quote.</p>
+				<div></div>
+			</div>
+			<div id="thirdBox">
+				<h3>03</h3>
+				<p>Answer some questions about your medical history</p>
+				<div></div>
+			</div>
+			<div id="fourthBox">
+				<h3>04</h3>
+				<p>Wait 90 seconds to get approved.</p>
+				<div></div>
+			</div>
+			<div id="fifthBox">
+				<h3>05</h3>
+				<p>Done</p>
+				<div></div>
+			</div>
+		</section>
+
+		<footer id="takeMeBack">
+			<button href="#entry" onclick="scrollUp()">
+				<div id="arrow"></div>
+				<div class="standardText">Take me up again</div>
+			</button>
+		</footer>
+
+		<footer id="end">
+
+		</footer>
+
+	</div>
+
+	<script>
+		"use strict";
+		function scrollUp() {
+			let position = document.body.scrollTop || document.documentElement.scrollTop;
+			let scrollAnimation;
+			if (position) {
+				window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
+				let scrollAnimation = setTimeout("scrollUp()", 30);
+			} else clearTimeout(scrollAnimation);
+		}
+	</script>
+>>>>>>> 231b303874e4b894b9a96417a29f9a018928e925
 
 </body>
+
 </html>
