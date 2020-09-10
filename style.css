@@ -75,13 +75,13 @@ p {
 /* Main */ 
 #main {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, ;
   grid-auto-rows: minmax(300px, auto);
   grid-auto-rows: auto;
   grid-template-areas: 
-  'mainItem1 mainItem2 .'
+  'mainItem1 mainItem2'
   'mainItem3 mainItem4 mainItem5'
-  '. mainItem6 .';
+  'mainItem6';
 }
 
 .mainItem {
