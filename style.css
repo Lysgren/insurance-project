@@ -64,6 +64,45 @@ body {
   font-weight: 600;
 }
 
+/* Main */ 
+#main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(300px, auto);
+  grid-auto-rows: auto;
+  grid-template-areas: 
+  'mainItem1 mainItem2 .'
+  'mainItem3 mainItem4 mainItem5'
+  '. mainItem6 .';
+}
+
+.mainItem {
+  background-color: red;
+}
+
+#main div:nth-of-type(1) {
+  grid-area: mainItem1
+}
+
+#main div:nth-of-type(2) {
+  grid-area: mainItem2
+}
+#main div:nth-of-type(3) {
+  grid-area: mainItem3
+}
+
+#main div:nth-of-type(4) {
+  grid-area: mainItem4
+}
+
+#main div:nth-of-type(5) {
+  grid-area: mainItem5
+}
+
+#main div:nth-of-type(6) {
+  grid-area: mainItem6
+}
+
 /* Sex lådorna undertill */
 #sixBoxes {
   display: grid;
