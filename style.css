@@ -74,18 +74,14 @@ p {
 
 /* Main */ 
 #main {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(300px, auto);
-  grid-auto-rows: auto;
-  grid-template-areas: 
-  'mainItem1 mainItem2'
-  'mainItem3 mainItem4 mainItem5'
-  'mainItem6';
+  display: flex;
+  background: linear-gradient(to bottom, #A8A19E 0%,#A8A19E 50%, #FAB131 50%,#FAB131 100%);
+  width: 100%;
+  height: 600px;
 }
 
 .mainItem {
-  background-color: red;
+  width: 100%;
 }
 
 #main div:nth-of-type(1) {
@@ -131,8 +127,7 @@ p {
 .six-boxes > div > h3 {
 	font-size: 3rem;
 	margin: 8% auto 0 8%;
-	color: black;
-	opacity: 0.5;
+	color: #8c8d8c;
 }
 
 .six-boxes > div > p {
@@ -222,7 +217,7 @@ p {
   background-color: #777574;
 }
 
-/* CSS som gäller för hela dokumentet*/
+/* Komponenter */
 .standardText {
   font-size: 20px;
   text-decoration: none;
