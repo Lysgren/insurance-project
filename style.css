@@ -75,36 +75,62 @@ p {
 /* Main */ 
 #main {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
   background: linear-gradient(to bottom, #A8A19E 0%,#A8A19E 50%, #FAB131 50%,#FAB131 100%);
   width: 100%;
-  height: 600px;
 }
 
-.mainItem {
+#main section:nth-of-type(1) {
+  width: 80%;
+}
+
+#main section:nth-of-type(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
   width: 100%;
+  height: 1000px;
 }
 
-#main div:nth-of-type(1) {
-  grid-area: mainItem1
+#main section:nth-of-type(2) article {
+  background-color: white;
+  flex: 0 0 25em;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px 0px  rgba(0,0,0,0.3);
+} 
+#main section:nth-of-type(2) article img {
+  max-width: 20%;
+  min-height: 300px;
 }
 
-#main div:nth-of-type(2) {
-  grid-area: mainItem2
-}
-#main div:nth-of-type(3) {
-  grid-area: mainItem3
-}
-
-#main div:nth-of-type(4) {
-  grid-area: mainItem4
+.child {
+  background-color: #C7DDEA;
+  align-self: center;
+  border-radius: 5px;
+  margin: -30px 10% 10% 10%; 
 }
 
-#main div:nth-of-type(5) {
-  grid-area: mainItem5
+.adult {
+  background-color: #FAB131;
+  border-radius: 5px;
+  margin: -30px 10% 10% 10%; 
 }
 
-#main div:nth-of-type(6) {
-  grid-area: mainItem6
+#main section:nth-of-type(3) {
+  width: 60%;
+}
+
+.old {
+  background-color: #F17949;
+  border-radius: 5px;
+  margin: -30px 10% 10% 10%; 
 }
 
 /* Sex lådorna undertill */
