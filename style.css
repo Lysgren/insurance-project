@@ -24,6 +24,28 @@ p {
 	margin: 0;
 }
 
+.h2-link {
+	font-family: Frank Ruhl Libre;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 41px;
+	letter-spacing: -0.02em;
+	text-align: center;	
+	color: #FFFFFF;
+}
+.h2-link a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.h2-link a:hover {
+	text-decoration: underline;
+}
+
+.h2-link a:visited {
+	color: #FFFFFF;
+}
+
 /* Header på contact sidan */
 
 .contact-us-header-container {
@@ -64,9 +86,12 @@ p {
 .entry .box1 .standardText{
 	margin-top: 0;
     margin-bottom: 56px;    
-    width: 268px;
-
+	width: 268px;
 } 
+
+.entry .box2 .h5, .entry .box3 .h5 {
+	margin: 0%;
+}
 
 
 
@@ -105,6 +130,18 @@ p {
     letter-spacing: -0.02em;
     margin-bottom: 11px;
     margin-top: 0;
+}
+
+.h5 {
+	font-family: "Fira Sans";
+	font-size: 11px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 13px;
+	letter-spacing: -0.02em;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.5)
+
 }
 
 .box1 section h5 div {
