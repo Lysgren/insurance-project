@@ -10,6 +10,10 @@ body {
   margin-right: 12.5%;
 }
 
+h2 {
+	margin: 0;
+}
+
 h3 {
 	margin: 0;
 }
@@ -358,17 +362,23 @@ p {
 
 .main-contact {
 	background: #A9A19E;
-	display: flex;
-	min-height: 35rem;
+	display: grid;
+	grid-template-areas:
+	"on-mind contact"
+	"map map";
+	color: white;
+}
+
+.whats-on-your-mind, .contact-form {
 	padding: 5rem;
 	padding-top: 8rem;
-	color: white;
 }
 
 .whats-on-your-mind {
 	display: flex;
 	flex-flow: column;
-	flex: 1;
+	grid-area: on-mind;
+	padding-right: 0;
 }
 
 .whats-on-your-mind h2 {
@@ -383,6 +393,8 @@ p {
 	flex: 1;
 	font-family: Arial, Helvetica, sans-serif;
 	padding-right: 10rem;
+	grid-area: contact;
+	padding-left: 0;
 }
 
 .contact-form label {
@@ -419,6 +431,39 @@ p {
 	background: white;
 	color: rgba(0, 0, 0, 0.8);
 	box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.come-visit-us {
+	grid-area: map;
+	background: url('img/map.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 40rem;
+	display: flex;
+}
+
+.come-visit-us div {
+	background: #FAB131;
+	color: white;
+	padding: 2rem;
+	box-sizing: border-box;
+	height: 18rem;
+	width: 26rem;
+	margin-left: 10rem;
+	margin-top: 5rem;
+}
+
+.come-visit-us div h2 {
+	font-size: 3.5rem;
+}
+
+.come-visit-us div p {
+	opacity: 0.8;
+}
+
+.come-visit-us img {
+	margin-left: 12rem;
+	margin-top: 4rem;
 }
 
 /* Footer vid slutet av dokumentet*/
@@ -499,6 +544,13 @@ p {
   background-color: #f1f1f1;
 }
 
+/* Contact footer */
+
+.footer-contact {
+	min-height: 27rem;
+	background: #A9A19E;
+}
+
 /* Media queries för responsivitet */
 
 @media (max-width: 1600px) {
@@ -547,6 +599,23 @@ p {
   .navbar {
     display: none;
   }
+
+  .main-contact {
+	  grid-template-areas: 
+	  "on-mind"
+	  "contact"
+	  "map";
+  }
+
+  .whats-on-your-mind h2 {
+	font-size: 4rem;
+	max-width: unset;
+	align-self: center;
+	min-height: 15rem;
+	}
+	.contact-form, .whats-on-your-mind {
+		padding: 0;
+	}
 
   .main section:nth-of-type(1) {
     display: flex;
