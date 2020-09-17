@@ -173,30 +173,37 @@ p {
 
 .navbar {
 	background-color: #EBEBEB;
-	list-style-type: none;
+	display: flex; 
+	justify-content: center;
+
+}
+.navbar .nav-item {
+	width: 167px;
 	text-align: center;
-	margin: 0;
-	padding: 0;
-}
+	display: flex;
+	height: 57px;
+	align-items: center;
+	justify-content: center;
 
-.navbar li {
-	display: inline-block;
-	padding-top: 2.5rem;
-	padding-bottom: 2.5rem;
-	padding-left: 6%;
-	padding-right: 6%
 }
-
-.navbar li a {
-	font-size: 1.125rem;
-	text-decoration: none;
-	font-family: arial;
-	color: #A8A19E;
+.navbar a.nav-item {
+	font-family: "Fira Sans";
+	font-style: normal;
 	font-weight: 600;
+	font-size: 12px;
+	line-height: 100%;
+	letter-spacing: -0.02em;
+	color: #000000;
+	opacity: 0.4;
+	text-decoration: none;
+}
+.navbar a.nav-item:hover {
+	text-decoration: underline;
 }
 
-#active {
-	color: #47433a;
+/*Go to the navbar, find an "a element" that has a nav-item class and active class*/
+.navbar a.nav-item.active {
+	opacity: 1;
 }
 
 /* Main */
