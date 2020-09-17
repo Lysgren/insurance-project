@@ -437,8 +437,11 @@ p {
 	background: url('img/map.png');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center center;
 	min-height: 40rem;
 	display: flex;
+	flex-flow: column;
+	padding: 5rem;
 }
 
 .come-visit-us div {
@@ -448,8 +451,7 @@ p {
 	box-sizing: border-box;
 	height: 18rem;
 	width: 26rem;
-	margin-left: 10rem;
-	margin-top: 5rem;
+	margin: 2rem;
 }
 
 .come-visit-us div h2 {
@@ -461,8 +463,7 @@ p {
 }
 
 .come-visit-us img {
-	margin-left: 12rem;
-	margin-top: 4rem;
+	align-self: center;
 }
 
 /* Footer vid slutet av dokumentet*/
@@ -562,9 +563,6 @@ p {
 }
 
 @media (max-width: 1300px) {
-	html {
-		font-size: 1.1vw;
-	}
 	.main section:nth-of-type(2) {
 		display: flex;
 		flex-direction: column;
@@ -589,21 +587,44 @@ p {
 		grid-auto-rows: minmax(200px, auto);
 		grid-template-areas: 'covered' 'learnMore' 'joinToday';
 	}
+
+	.contact-us-header-container div{
+		display: none;
+	}
+
 	.navbar {
 		display: none;
 	}
+
 	.main-contact {
 		grid-template-areas: "on-mind" "contact" "map";
 	}
+
 	.whats-on-your-mind h2 {
 		font-size: 4rem;
 		max-width: unset;
 		align-self: center;
-		min-height: 15rem;
 	}
+
 	.contact-form, .whats-on-your-mind {
 		padding: 0;
 	}
+
+	.whats-on-your-mind {
+		min-height: 15rem;
+		justify-content: center;
+	}
+
+	.contact-form {
+		margin: 0 2rem;
+	}
+
+	.come-visit-us div {
+		align-self: center;
+		margin: 0;
+		margin-bottom: 2rem;
+	}
+
 	.main section:nth-of-type(1) {
 		display: flex;
 		flex-direction: column;
