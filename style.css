@@ -4,6 +4,7 @@ body {
 	margin: 0;
 	line-height: 1.6;
 	background-color: #EBEBEB;
+	min-width: 40rem;
 }
 
 .content-limiter {
@@ -53,7 +54,7 @@ p {
 .entry {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-auto-rows: minmax(120px, auto);
+	grid-auto-rows: minmax(7.5rem, auto);
 	grid-template-areas: 'covered covered learnMore learnMore' 'covered covered learnMore learnMore' 'covered covered joinToday joinToday' 'covered covered joinToday joinToday';
 	text-align: center;
 	word-wrap: break-word;
@@ -62,15 +63,15 @@ p {
 .box1 {
 	background-color: #C7DDEA;
 	grid-area: covered;
-	padding: 20px 0;
-	font-size: 30px;
+	padding: 1.25rem 0;
+	font-size: 1.875rem;
 }
 
 .box1 {
 	background-color: #C7DDEA;
 	grid-area: covered;
-	padding: 20px 0;
-	font-size: 30px;
+	padding: 1.25rem 0;
+	font-size: 1.875rem;
 	display: flex;
 	align-items: center;
 	text-align: left;
@@ -84,7 +85,7 @@ p {
 }
 
 .box1 section h1 {
-	font-size: 60px;
+	font-size: 3.75rem;
 	font-weight: 900;
 	margin-bottom: -3%;
 	line-height: 1;
@@ -96,10 +97,10 @@ p {
 
 .box1 img {
 	object-fit: contain;
-	object-position: 20px 0px;
+	object-position: 1.25rem 0px;
 	width: 30rem;
 	height: 25rem;
-	margin-bottom: -20px;
+	margin-bottom: -1.25rem;
 }
 
 .box2 {
@@ -109,7 +110,7 @@ p {
 	flex-direction: column;
 	background-color: #F17949;
 	grid-area: learnMore;
-	font-size: 30px;
+	font-size: 1.875rem;
 }
 
 .box3 {
@@ -119,7 +120,7 @@ p {
 	flex-direction: column;
 	background-color: #FAB131;
 	grid-area: joinToday;
-	font-size: 30px;
+	font-size: 1.875rem;
 }
 
 /* Navigationsbaren */
@@ -134,14 +135,14 @@ p {
 
 .navbar li {
 	display: inline-block;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
 	padding-left: 6%;
 	padding-right: 6%
 }
 
 .navbar li a {
-	font-size: 18px;
+	font-size: 1.125rem;
 	text-decoration: none;
 	font-family: arial;
 	color: #A8A19E;
@@ -174,17 +175,16 @@ p {
 }
 
 .main section:nth-of-type(1) div {
-	width: calc(150px + 20rem);
-	height: calc(300px + 20rem);
+	height: calc(18.75rem + 20rem);
 }
 
 .main section:nth-of-type(1) div h1 {
-	font-size: calc(20px + 3rem);
+	font-size: calc(1.25rem + 3rem);
 	white-space: normal;
 	line-height: 1.2;
 	font-weight: 600;
 	font-family: "Times New Roman", Times, serif;
-	margin-top: 0px;
+	margin-top: 0;
 	margin-bottom: 25%;
 }
 
@@ -199,8 +199,6 @@ p {
 
 .main section:nth-of-type(2) article {
 	background-color: white;
-	width: 360px;
-	height: 460px;
 	border-radius: 5px;
 	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
@@ -216,10 +214,10 @@ p {
 
 .child img {
 	object-fit: cover;
-	object-position: 0px 20px;
-	width: 115px;
-	height: 200px;
-	margin-bottom: -8px;
+	object-position: 0px 1.25rem;
+	width: 7.1875rem;
+	height: 12.5rem;
+	margin-bottom: -0.5rem;
 }
 
 .adult {
@@ -228,10 +226,10 @@ p {
 
 .adult img {
 	object-fit: cover;
-	object-position: 0px 20px;
-	width: 115px;
-	height: 200px;
-	margin-bottom: -8px;
+	object-position: 0px 1.25rem;
+	width: 7.1875rem;
+	height: 12.5rem;
+	margin-bottom: -0.5rem;
 }
 
 .old {
@@ -240,15 +238,15 @@ p {
 
 .old img {
 	object-fit: cover;
-	object-position: 0px 20px;
-	width: 170px;
-	height: 200px;
-	margin-bottom: -8px;
+	object-position: 0px 1.25rem;
+	width: 10.625rem;
+	height: 12.5rem;
+	margin-bottom: -0.5rem;
 }
 
 .main section:nth-of-type(2) h1 {
 	text-align: center;
-	font-size: 25px;
+	font-size: 1.5625rem;
 	max-width: 20em;
 	font-weight: 600;
 	font-family: "Times New Roman", Times, serif;
@@ -274,7 +272,7 @@ p {
 }
 
 .main section:nth-of-type(3) h1 {
-	font-size: 55px;
+	font-size: 3.4375rem;
 }
 
 .main section:nth-of-type(3) h2 {
@@ -430,6 +428,7 @@ p {
 	background: white;
 	color: rgba(0, 0, 0, 0.8);
 	box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+	font-size: 1.3rem;
 }
 
 .come-visit-us {
@@ -473,7 +472,7 @@ p {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 70px;
+	height: 4.375rem;
 }
 
 #takeMeBack button {
@@ -490,22 +489,22 @@ p {
 	border: solid black;
 	border-width: 0 7px 7px 0;
 	display: inline-block;
-	padding: 10px;
+	padding: 0.625rem;
 	transform: rotate(-135deg);
 	-webkit-transform: rotate(-135deg);
-	margin-top: 15px;
+	margin-top: 0.9375rem;
 }
 
 #end {
 	width: 100%;
-	height: 200px;
+	height: 12.5rem;
 	background-color: #777574;
 }
 
 /* Komponenter */
 
 .standardText {
-	font-size: 20px;
+	font-size: 1.25rem;
 	text-decoration: none;
 	font-family: arial;
 	color: #47433a;
@@ -518,7 +517,7 @@ p {
 }
 
 .distanceRemover {
-	margin-top: -35px;
+	margin-top: -2.1875rem;
 }
 
 .textVertical {
@@ -532,13 +531,13 @@ p {
 .pillButton {
 	background-color: white;
 	border: none;
-	padding: 16px 48px;
+	padding: 1rem 3rem;
 	text-align: center;
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 600;
 	display: inline-block;
 	cursor: pointer;
-	border-radius: 30px;
+	border-radius: 1.875rem;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -569,8 +568,6 @@ p {
 		background: #A8A19E;
 	}
 	.main section:nth-of-type(2) article {
-		width: calc(260px + 20rem);
-		height: calc(300px + 10rem);
 		margin-top: 6%;
 		margin-bottom: 6%;
 	}
@@ -584,7 +581,7 @@ p {
 @media (max-width: 1000px) {
 	.entry {
 		grid-template-columns: repeat(1, 1fr);
-		grid-auto-rows: minmax(200px, auto);
+		grid-auto-rows: minmax(12.5rem, auto);
 		grid-template-areas: 'covered' 'learnMore' 'joinToday';
 	}
 
@@ -629,15 +626,13 @@ p {
 		display: flex;
 		flex-direction: column;
 		background: #A8A19E;
-		margin-bottom: calc(110px + 5rem);
+		margin-bottom: calc(6.875rem + 5rem);
 	}
 	.main section:nth-of-type(1) div:nth-of-type(1) {
-		width: calc(220px + 30rem);
-		height: calc(100px + 10rem);
+		height: calc(6.25rem + 10rem);
 	}
 	.main section:nth-of-type(1) div:nth-of-type(2) {
-		width: calc(220px + 30rem);
-		height: calc(150px + 20rem);
+		height: calc(9.375rem + 20rem);
 	}
 	.main section:nth-of-type(1) div button {
 		display: none;
@@ -648,12 +643,18 @@ p {
 		grid-template-areas: 'zeroBox' 'firstBox' 'secondBox' 'thirdBox' 'fourthBox' 'fifthBox'
 	}
 	.six-boxes>div>h3 {
-		font-size: calc(20px + 2rem);
+		font-size: calc(1.25rem + 2rem);
 	}
 	.six-boxes>div>p {
-		font-size: calc(10px + 1.1rem);
+		font-size: calc(0.625rem + 1.1rem);
 	}
 	#takeMeBack {
 		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	html {
+		font-size: calc(0.6rem + 1vw);
 	}
 }
